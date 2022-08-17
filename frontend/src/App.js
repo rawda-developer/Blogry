@@ -10,13 +10,15 @@ function App() {
     <>
       <Router>
         <NavBar />
-        <Routes>
-          <Route path='/' element={<HomePage />} exact />
-          <Route path='/about' element={<AboutPage />} exact />
-          <Route path='/article' element={<ArticlePage />} exact />
-          <Route path='/articles' element={<ArticleList />} exact />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
+        <div className='mx-auto w-4/5'>
+          <Routes>
+            <Route path='/' element={<HomePage />} exact />
+            <Route path='/about' element={<AboutPage />} exact />
+            <Route path='/article' element={<ArticlePage />} exact />
+            <Route path='/articles' element={<ArticleList />} exact />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </div>
       </Router>
     </>
   );
