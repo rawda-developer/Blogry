@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 const NavBar = () => (
   <nav>
-    <ul className='menu menu-vertical lg:menu-horizontal bg-base-100 rounded-box'>
+    <ul className='menu menu-vertical lg:menu-horizontal bg-base-100 rounded-box mb-5'>
       <li>
         <Link to='/'>Home</Link>
       </li>

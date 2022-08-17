@@ -1,6 +1,6 @@
 const AboutPage = () => (
   <>
-    <h1>About me</h1>
+    <h1 className='text-xl mb-5'>About me</h1>
     <p>Welcome to my Blog</p>
     <p>
       Welcome to my blog! Proin congue ligula id risus posuere, vel eleifend ex
