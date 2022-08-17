@@ -9,7 +9,6 @@ const ArticlePage = () => {
       {article.content.map((paragraph, i) => (
         <>
           <p key={i}>{paragraph}</p>
-
           <br />
         </>
       ))}
