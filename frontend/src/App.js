@@ -4,17 +4,18 @@ import HomePage from './pages/HomePage';
 import ArticlePage from './pages/ArticlePage';
 import ArticleList from './pages/ArticlesList';
 import NavBar from './NavBar';
-
+import NotFound from './pages/NotFound';
 function App() {
   return (
     <>
       <Router>
         <NavBar />
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/about' element={<AboutPage />} />
-          <Route path='/article' element={<ArticlePage />} />
-          <Route path='/articles' element={<ArticleList />} />
+          <Route path='/' element={<HomePage />} exact />
+          <Route path='/about' element={<AboutPage />} exact />
+          <Route path='/article' element={<ArticlePage />} exact />
+          <Route path='/articles' element={<ArticleList />} exact />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </Router>
     </>
