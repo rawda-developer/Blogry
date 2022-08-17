@@ -14,8 +14,8 @@ function App() {
           <Routes>
             <Route path='/' element={<HomePage />} exact />
             <Route path='/about' element={<AboutPage />} exact />
-            <Route path='/articles/:name' element={<ArticlePage />} exact />
             <Route path='/articles' element={<ArticleList />} exact />
+            <Route path='/articles/:name' element={<ArticlePage />} exact />
             <Route path='*' element={<NotFound />} />
           </Routes>
         </div>
