@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 const NavBar = () => (
-  <nav>
-    <ul className='menu menu-vertical lg:menu-horizontal bg-base-100 rounded-box mb-5 w-1/4 mx-auto lg:flex'>
+  <nav className='m-5'>
+    <ul className='w-1/4 menu menu-vertical lg:menu-horizontal bg-base-100 rounded-box lg:mx-auto lg:flex'>
       <li>
         <Link to='/'>Home</Link>
       </li>
@@ -13,6 +13,7 @@ const NavBar = () => (
         <Link to='/articles'>Articles</Link>
       </li>
     </ul>
+    <div className='divider'></div>
   </nav>
 );
 export default NavBar;
