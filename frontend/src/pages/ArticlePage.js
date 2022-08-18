@@ -3,9 +3,12 @@ import articles from './ArticlesContent';
 import NotFound from './NotFound';
 import { BiArrowBack } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+
+import ArticleList from '../components/ArticleList';
 const ArticlePage = () => {
   const { name } = useParams();
   const article = articles.find((article) => article.name === name);
+  const otherArticles = articles.filter((a) => a.name !== name);
   if (!article) return <NotFound />;
   return (
     <>
@@ -19,6 +22,9 @@ const ArticlePage = () => {
           <br />
         </>
       ))}
+      <div className='divider'></div>
+      <h1 className='text-2xl mb-5'>Other Articles</h1>
+      <ArticleList articles={otherArticles} />
     </>
   );
 };
