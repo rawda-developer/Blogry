@@ -1,2 +1,4 @@
-const NotFound = () => <>Sorry this page wasn't found</>;
+const NotFound = () => (
+  <div className='text-2xl'>Sorry this page wasn't found</div>
+);
 export default NotFound;
