@@ -1,0 +1,42 @@
+{
+  "name": "blogry-backend",
+  "version": "1.0.0",
+  "description": "The Backend of a blogging website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "export NODE_ENV=dev && nodemon --experimental-json-modules --exec babel-node src/server.js",
+    "start": "export NODE_ENV=production && nodemon --experimental-json-modules --exec babel-node src/server.js",
+    "debug": "DEBUG=express:* nodemon --experimental-json-modules --exec babel-node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rawda-developer/Blogry.git"
+  },
+  "keywords": [
+    "Blog",
+    "Blogry",
+    "MERN",
+    "Stack",
+    "JavaScript",
+    "Node"
+  ],
+  "author": "Rawda Yasser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rawda-developer/Blogry/issues"
+  },
+  "homepage": "https://github.com/rawda-developer/Blogry#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.5",
+    "@babel/node": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "nodemon": "^2.0.19"
+  }
+}
