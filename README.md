@@ -10,7 +10,7 @@
 
 ---
 
-<p align="center"> This project is a blogging website built using the MERN Stack and Tailwindcss. It has 4 pages to display home, about, and a list of articles. For styling purposes, I used daisyUI which is a component library for Tailwind css.
+<p align="center"> This project is a blogging website built using the MERN Stack and Tailwindcss. It has 4 pages to display home, about, and a list of articles. The user can add upvotes and comments to the articles. For styling purposes, I used daisyUI which is a component library for Tailwind css.
     <br> 
    
 </p>
