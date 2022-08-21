@@ -25,6 +25,7 @@ app.get('/api/articles/:name', async (req, res) => {
     const articleInfo = await db
       .collection('articles')
       .findOne({ name: articleName });
+    console.log('ArticleInfo', articleInfo);
     res.status(200).json(articleInfo);
   }, res);
 });
@@ -70,6 +71,7 @@ app.post('/api/articles/:name/add-comment', async (req, res) => {
       .collection('articles')
       .findOne({ name: articleName });
     res.status(200).json(updatedArticle);
+    console.log(updatedArticle);
   }, res);
 });
 app.listen(PORT, () => {

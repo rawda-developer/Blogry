@@ -50,8 +50,8 @@ const articles = [
     ],
   },
   {
-    name: 'my-thoughts-on-resumes',
-    title: 'My Thoughts on Resumes',
+    name: 'my-thoughts-on-resume',
+    title: 'My Thoughts on Resume',
     content: [
       `Today is the day I talk about something which scares most people: resumes.
             In reality, I'm not sure why people have such a hard time with proin congue
